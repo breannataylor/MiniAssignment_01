@@ -1,0 +1,35 @@
+/* Always going to put root at the top! */
+/* Create a variable called “--fancy-color” and make it functional for the :root pseudo-class. Choose a color using a color picking tool like https://colors-picker.com/hex-color-picker/ */
+:root {
+    --fancy-color: rgb(31, 103, 67);
+}
+/* Apply a 200% font-size to the first letter pseudo-element of the p tag with a class of “first” */
+p.first::first-letter {
+    font-size: 200%;
+}
+/* Apply a font-style of “italic” to the first-child pseudo-class of the p tag descendants of <main> */
+main p:first-child {
+    font-style: italic;
+}
+/* Use your variable to apply this color to the h1 and h2 tags*/
+h1, h2 {
+    color: var(--fancy-color);
+}
+/* Apply a font-variant of “small-caps” to all q tags that are descendants of p tags*/
+p q {
+    font-variant: small-caps;
+}
+/* Add a line-height of 200% to all p tags that are children of <main>*/
+main > p {
+    line-height: 200%;
+}
+
+/*A little addition from me - changing the color of the links and bolded it a bit */
+a[href] {
+    color: green;
+    font-weight: 600 !important;
+}
+a[href]:hover{
+    color: darkred;
+}
+

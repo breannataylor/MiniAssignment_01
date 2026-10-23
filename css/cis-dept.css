@@ -1,0 +1,31 @@
+/* For descendant p tags of the main element, set the font-weight to “bolder” */
+main p {
+    font-weight: bolder;
+}
+/* For general sibling p tag of an ol element, set the color to “teal” */
+ol~p {
+    color: teal;
+}
+/* For all child li tags of an ol tag, set the color to “coral”, font-weight to “bold”, and line-height to 1.4em */
+ol > li {
+    color: coral;
+    font-weight: bold;
+    line-height: 1.4em;
+}
+/* For both the footer and the h1 elements, set the color to “darkslategrey” */
+footer, h1 {
+    color: darkslategrey;
+}
+/* For all a tags with an href attribute, set the color to “seagreen” and font-weight to 900 */
+a[href] {
+    color:seagreen ;
+    font-weight: 900;
+}
+/* For all li tags with a class of programmer, set the color to “darkorchid” and font-variant to “small-caps” */
+li.programmer {
+    color:darkorchid;
+    font-variant: small-caps;
+}
+section ul {
+    color:darkolivegreen;
+}
