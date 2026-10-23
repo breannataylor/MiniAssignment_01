@@ -26,3 +26,15 @@ li.programmer {
     color:darkorchid;
     font-variant: small-caps;
 }
+
+/* Customizations */
+ul > li {
+    list-style-type: "❀";
+}
+
+/* Capitalize only the first letter of the professors of the department  - ol is a descendant of main and li is a child of ol */
+main ol > li::first-letter {
+    font-style: bolder;
+    font-size: 2em;
+    color:rgb(57, 57, 106);
+}
